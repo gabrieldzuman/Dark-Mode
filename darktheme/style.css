@@ -5,34 +5,38 @@ body {
     font-size: 25px;
     text-align: center;
     font-family: fantasy;
-  }
-  .dark-mode {
+    transition: all 0.5s ease; 
+}
+
+.dark-mode {
     background-color: #111;
     color: whitesmoke;
-    transition: all 0.7s ease;
-  }
-  .light-mode {
+}
+
+.light-mode {
     background-color: whitesmoke;
     color: #111;
-    transition: all 1s ease;
-  }
+}
 
-  .btn {
-      width: 50px;
-      background: black;
-      color: white;
-      border-radius: 5px;
-      padding: 5px;
-  }
+.btn, .btn2 {
+    width: 50px;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
 
-  .btn2 {
-      width: 50px;
-      background: white;
-      color: black;
-      border-radius: 5px;
-      padding: 5px;
-  }
+.btn {
+    background: black;
+    color: white;
+}
 
-  .img {
-      text-align: center;
-  }
+.btn2 {
+    background: white;
+    color: black;
+}
+
+.img {
+    text-align: center;
+    margin-top: 20px;
+}
